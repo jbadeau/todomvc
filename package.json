@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "repository": "https://github.com/jbadeau/todomvc.git",
+  "author": "jbadeau <jose.badeau@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "lerna run start",
+    "build": "lerna run  build",
+    "test": "lerna run test",
+    "eject": "lerna run eject",
+    "storybook": "start-storybook -p 9009",
+    "build-storybook": "build-storybook",
+    "gauge": "lerna run gauge"
+  },
+  "devDependencies": {
+    "lerna": "^3.19.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "libs/*",
+    "tools/*"
+  ],
+  "dependencies": {}
+}
