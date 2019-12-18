@@ -1,24 +1,39 @@
 {
+  "name": "valorium-app-react",
+  "version": "0.1.0",
   "private": true,
-  "repository": "https://github.com/jbadeau/todomvc.git",
-  "author": "jbadeau <jose.badeau@gmail.com>",
-  "license": "UNLICENSED",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
+    "typescript": "~3.7.2"
+  },
   "scripts": {
-    "start": "lerna run start",
-    "build": "lerna run  build",
-    "test": "lerna run test",
-    "eject": "lerna run eject",
-    "storybook": "start-storybook -p 9009",
-    "build-storybook": "build-storybook",
-    "gauge": "lerna run gauge"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "lerna": "^3.19.0"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "workspaces": [
-    "apps/*",
-    "libs/*",
-    "tools/*"
-  ],
-  "dependencies": {}
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
